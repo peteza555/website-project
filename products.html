@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | Phone Case Store</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .add-to-cart-btn {
+            padding: 10px 20px;
+            background-color: #000000;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .add-to-cart-btn:hover {
+            background-color: #000000;
+            transform: scale(1);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .add-to-cart-btn:active {
+            transform: scale(0.99);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="purchase.html">How to Purchase</a>
+        <a href="promotions.html">Promotions</a>
+    </nav>
+    <section class="container">
+        <h1>Our Products</h1>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search for a product..." onkeyup="searchProducts()">
+        </div>
+        <div class="products-grid">
+            <div class="product-item classic">
+                <img src="images/classic-case1.jpg" alt="Classic Case 1">
+                <h3>Classic Case 1</h3>
+                <p>Elegant and durable design for everyday use.</p>
+                <button class="add-to-cart-btn" onclick="addToCart('Classic Case 1')">Add to Cart</button>
+            </div>
+            <div class="product-item shockproof">
+                <img src="images/shockproof-case1.jpg" alt="Shockproof Case 1">
+                <h3>Shockproof Case 1</h3>
+                <p>Maximum protection against drops and impacts.</p>
+                <button class="add-to-cart-btn" onclick="addToCart('Shockproof Case 1')">Add to Cart</button>
+            </div>
+            <div class="product-item custom">
+                <img src="images/custom-case1.jpg" alt="Custom Case 1">
+                <h3>Custom Case 1</h3>
+                <p>Personalize your phone case with unique designs.</p>
+                <button class="add-to-cart-btn" onclick="addToCart('Custom Case 1')">Add to Cart</button>
+            </div>
+            <div class="product-item classic">
+                <img src="images/classic-case2.jpg" alt="Classic Case 2">
+                <h3>Classic Case 2</h3>
+                <p>Minimalist design with premium materials.</p>
+                <button class="add-to-cart-btn" onclick="addToCart('Classic Case 2')">Add to Cart</button>
+            </div>
+            <div class="product-item shockproof">
+                <img src="images/shockproof-case2.jpg" alt="Shockproof Case 2">
+                <h3>Shockproof Case 2</h3>
+                <p>Enhanced grip and shock absorption.</p>
+                <button class="add-to-cart-btn" onclick="addToCart('Shockproof Case 2')">Add to Cart</button>
+            </div>
+            <div class="product-item custom">
+                <img src="images/custom-case2.jpg" alt="Custom Case 2">
+                <h3>Custom Case 2</h3>
+                <p>Design your own case with our custom tools.</p>
+                <button class="add-to-cart-btn" onclick="addToCart('Custom Case 2')">Add to Cart</button>
+            </div>
+            <div class="product-item classic">
+                <img src="images/classic-case3.jpg" alt="Classic Case 3">
+                <h3>Classic Case 3</h3>
+                <p>Timeless style with a modern twist.</p>
+                <button class="add-to-cart-btn" onclick="addToCart('Classic Case 3')">Add to Cart</button>
+            </div>
+            <div class="product-item shockproof">
+                <img src="images/shockproof-case3.jpg" alt="Shockproof Case 3">
+                <h3>Shockproof Case 3</h3>
+                <p>Rugged protection for extreme conditions.</p>
+                <button class="add-to-cart-btn" onclick="addToCart('Shockproof Case 3')">Add to Cart</button>
+            </div>
+            <div class="product-item custom">
+                <img src="images/custom-case3.jpg" alt="Custom Case 3">
+                <h3>Custom Case 3</h3>
+                <p>Create a case that reflects your personality.</p>
+                <button class="add-to-cart-btn" onclick="addToCart('Custom Case 3')">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Phone Case Store. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
